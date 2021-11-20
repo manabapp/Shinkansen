@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="viewport" content="width=375,initial-scale=1,user-scalable=yes">
+<title>北陸新幹線</title>
+<link rel="stylesheet" href="../apps.css">
+</head>
+<body>
+<div class="outer">
+    <img src="img/shinkansen_splash.png" width=130 height=130 alt="AppIcon"/><br>
+    <div class="title">北陸新幹線</div>
+    
+    <p>
+    
+    富山-東京間を業界最速で空席照会します。
+    <div class="inner">
+        <div class="yoko">
+            <div><img class="screenshotimg" src="img/ScreenShot1_ja.jpeg" alt="image1" width=276px height=597px /></div>
+            <div><img class="screenshotimg" src="img/ScreenShot2_ja.jpeg" alt="image2" width=276px height=597px /></div>
+            <div><img class="screenshotimg" src="img/ScreenShot3_ja.jpeg" alt="image3" width=276px height=597px /></div>
+            <div><img class="screenshotimg" src="img/ScreenShot4_ja.jpeg" alt="image4" width=276px height=597px /></div>
+        </div>
+    </div>
+
+    <p>
+    
+    <div id="p1">
+        <a onclick="showDescription();">さらに詳しく</a>
+    </div>
+    <div id="p2">
+        <a onclick="hideDescription();">説明を隠す</a><br>
+        <div class="inner">
+            「北陸新幹線」は、富山-東京間の列車の時刻表および空席状況を照会するアプリです（お住まいの地域に応じて、金沢-上野間などへ変更できます）。<br><br>
+            
+            <span class="functions">迅速な情報照会</span><br>
+            アプリを起動した時点で本日の列車の空席状況を照会します。初期表示は、現在地が富山駅に近ければ「上り」、東京駅に近ければ「下り」が表示されます。<br><br>
+        
+            <span class="functions">全ての列車を表示</span><br>
+            ご指定日の全ての列車を一覧表示します。当日分については、走行中の列車情報も表示します。<br><br>
+            
+            <span class="functions">走行地点の確認</span><br>
+            端末の位置情報から現在の走行区間をポイントします。時刻表よりも列車が遅れていば、遅延していることを表示します。<br><br>
+            
+            JR 東日本のサービス「えきねっと」では、新幹線の路線、出発・到着駅、および日時の指定を繰り返して照会する必要があるため、予約までに時間を要してしまいがちです。<br>
+            本アプリを使用することにより、少ない操作で簡単に情報を照会できることができます。本アプリで事前に空席情報を確認することでスムーズな列車予約ができるでしょう。<br><br>
+            
+            本アプリを使用するには、Pythonista 3 を別途インストールしたうえで GitHub から直接ソースファイルをダウンロードしてご利用ください（現在公開停止中）。
+        </div>
+        <a onclick="hideDescription();">説明を隠す</a>
+    </div>
+    
+    <p>
+    <br>
+    <!-- refer: https://primer.style/octicons/ -->
+    <a href="../index_ja.html"><img src="img/home.svg" height=24 alt="HomePage" title="Go back to Home page" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="img/gray-download.svg" height=24 alt="Download" title="Download latest version" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="img/gray-github.svg" height=24 alt="GitHub" title="Go to GitHub site" />
+    
+    <p>
+    
+    <!-- refer: https://qiita.com/macoril/items/48125b2a0a48339b3693 -->
+    <!-- refer: https://developer.apple.com/jp/app-store/marketing/guidelines/ -->
+    <a href="http://omz-software.com/pythonista/index.html"><img src="img/Pythonista3.jpeg" width=150px /></a><br>
+    <span class="trademarks">北陸新幹線は、iOS の Python 統合開発環境アプリ Pythonista 3 上で動作します。</span>
+    
+    <p>
+    
+    <div class="copyright">© 2021 manabapp.</div>
+    
+    <p>
+    
+</div>
+<script>
+    document.getElementById("p1").style.display = "block";
+    document.getElementById("p2").style.display = "none";
+    function showDescription(){
+        document.getElementById("p1").style.display = "none";
+        document.getElementById("p2").style.display = "block";
+    }
+    function hideDescription(){
+        document.getElementById("p1").style.display = "block";
+        document.getElementById("p2").style.display = "none";
+    }
+</script>
+</body>
+</html>
